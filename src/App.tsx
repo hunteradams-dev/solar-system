@@ -5,7 +5,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import "./style.css";
 
 function Sun() {
-  const model = useLoader(GLTFLoader, "/models/sun.glb");
+  const model = useLoader(GLTFLoader, "/hi/sun-hires1.glb");
 
   return (
     <>
@@ -13,7 +13,7 @@ function Sun() {
       <directionalLight
         castShadow
         position={model.scene.position}
-        intensity={3}
+        intensity={5}
       />
     </>
   );
